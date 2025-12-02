@@ -8,6 +8,29 @@
 	box-sizing: border-box;
 }
 
+
+:root {
+	--filter:brightness(2.0);
+	--blur: blur(5px);
+	--contrast: contrast(5000%);
+	--hue-rotate: hue-rotate(180deg); 
+	--invert: invert(100%);
+	--drop-shadow: drop-shadow(8px 8px 10px gray);	
+	--grayscale: grayscale(100%);
+	--opacity: opacity(30%);
+	--saturate: saturate(8);
+	--sepia: sepia(100%);
+	--brightness: contrast(900%) brightness(150%);
+	--deg: opacity(50%);
+	--contrast2: contrast(300%);
+	--AAA: sepia(300%);
+	--BBB: invert(250%);
+	--CCC: grayscale(300%);
+	--DDD: drop-shadow(10px 10px 15px red);
+
+	
+}
+
 html,
 body {
 	height: 100%;
@@ -199,6 +222,73 @@ ul {
 	display: grid;
 	grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
 }
+
+.img1 {
+	filter: var(--filter);
+}
+
+.img2 {
+	filter: var(--blur);
+}
+
+.img3 {
+	filter: var(--contrast);
+}
+
+.img4 {
+	filter: var(--hue-rotate);
+}
+
+.img5 {
+	filter: var(--invert);
+}
+
+.img6 {
+	filter: var(--drop-shadow);
+}
+
+.img7 {
+	filter: var(--grayscale);
+}
+
+.img8 {
+	filter: var(--opacity);
+}
+
+.img9 {
+	filter: var(--saturate);
+}
+
+.img10 {
+	filter: var(--sepia);
+}
+
+.img11 {
+	filter: var(--deg);
+}
+
+.img12 {
+	filter: var(--contrast2);
+}
+
+.img13 {
+	filter: var(--AAA);
+}
+
+.img14 {
+	filter: var(--BBB);
+}
+
+.img15 {
+	filter: var(--CCC);
+}
+
+.img16 {
+	filter: var(--DDD);
+}
+
+
+
 
 @media (min-width: 550px) {
 	.footer__copy {
